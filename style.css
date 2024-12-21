@@ -1,0 +1,770 @@
+/* Reset default margin and use a modern font for the body */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+}
+
+/* Apply box-sizing to include padding and border in element's total width and height */
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Set font size to 62.5% for easier em unit conversion */
+.html {
+    font-size: 62.5%;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Logo styles */
+.logo {
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: -12px;
+}
+
+/* Navigation styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Container for better layout control */
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+
+/* Button styles */
+.btn {
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    text-decoration: none;
+    border-radius: 50px;
+    cursor: pointer;
+    outline: none;
+    margin-top: 1em;
+    text-transform: uppercase;
+    font-weight: small;
+}
+
+/* Primary button styles */
+.btn-primary {
+    color: #fff;
+    background: #16a083;
+}
+
+/* Hover effect for primary button */
+.btn-primary:hover {
+    background: #117964;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Desktop mode styles for the navbar */
+/* Hide checkbox and hamburger lines by default */
+.navbar input[type="checkbox"],
+.navbar .hamburger-lines {
+    display: none;
+}
+
+.navbar {
+    box-shadow: 0px 5px 10px 0px #aaa;
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    color: #000;
+    opacity: 0.85;
+    height: 50px;
+    z-index: 12;
+}
+
+/* Container for navbar items */
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+    align-items: center;
+}
+
+/* Menu items styles */
+.menu-items {
+    order: 2;
+    display: flex;
+}
+
+.menu-items li {
+    list-style: none;
+    margin-left: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.menu-items a {
+    text-decoration: none;
+    color: #444;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Hover effect for menu items */
+.menu-items a:hover {
+    color: #117964;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Logo styles in the navbar */
+.logo {
+    order: 1;
+    font-size: 2.3rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Showcase styling */
+.showcase-area {
+    height: 50vh;
+    background: linear-gradient(rgba(240, 240, 240, 0.144),
+            rgba(255, 255, 255, 0.336)),
+        url(images/aihealth.jpg)
+}
+
+/* Container for showcase content */
+.showcase-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 1.6rem;
+}
+
+/* Uppercase text for main title in showcase */
+.main-title {
+    text-transform: uppercase;
+    margin-top: 1.5em;
+}
+
+/* About us section styling */
+#about {
+    padding: 50px 0;
+    background: #f5f5f7;
+}
+
+/* Container for about us content */
+.about-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Header styles for about section */
+#about h2 {
+    font-size: 2.3rem;
+}
+
+/* Paragraph styles for about section */
+#about p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Small text styles for about section */
+#about .small {
+    font-size: 1.2rem;
+    color: #666;
+    font-weight: 600;
+}
+
+/* Image container styles for about section */
+.about-img {
+    flex: 1 1 400px;
+    padding: 30px;
+    transform: translateX(150%);
+    animation: about-img-animation 1s ease-in-out forwards;
+}
+
+/* Keyframe animation for image */
+@keyframes about-img-animation {
+    100% {
+        transform: translate(0);
+    }
+}
+
+/* Text container styles for about section */
+.about-text {
+    flex: 1 1 400px;
+    padding: 30px;
+    margin: auto;
+    transform: translate(-150%);
+    animation: about-text-animation 1s ease-in-out forwards;
+}
+
+/* Keyframe animation for text */
+@keyframes about-text-animation {
+    100% {
+        transform: translate(0);
+    }
+}
+
+/* Image styles for about section */
+.about-img img {
+    display: block;
+    height: 400px;
+    max-width: 100%;
+    margin: auto;
+    object-fit: cover;
+    object-position: right;
+}
+
+/* Food category section styling */
+#food {
+    padding: 5rem 0 10rem 0;
+}
+
+/* Header styles for food category */
+#food h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    color: #555;
+}
+
+/* Container for food items */
+.food-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Image styles for food items */
+.food-container img {
+    display: block;
+    width: 100%;
+    margin: auto;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Image container styles for food items */
+.img-container {
+    margin: 0 1rem;
+    position: relative;
+}
+
+/* Content styles for image container */
+.img-content {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    z-index: 2;
+    text-align: center;
+    transition: all 0.3s ease-in-out 0.1s;
+}
+
+/* Title styles for image container */
+.img-content h3 {
+    color: #fff;
+    font-size: 2.2rem;
+}
+
+/* Link styles for image container */
+.img-content a {
+    font-size: 1.2rem;
+}
+
+/* Overlay styles for image container */
+.img-container::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.871);
+    opacity: 0;
+    z-index: 1;
+
+    transform: scaleY(0);
+    transform-origin: 100% 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect for image container */
+.img-container:hover::after {
+    opacity: 1;
+    transform: scaleY(1);
+}
+
+/* Hover effect for image content */
+.img-container:hover .img-content {
+    opacity: 1;
+    top: 40%;
+}
+
+/* Food Menu section heading styles */
+.food-menu-heading {
+    text-align: center;
+    font-size: 3.4rem;
+    font-weight: 400;
+    color: #666;
+}
+
+/* Container styles for food menu items */
+.food-menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 0px 30px 0px;
+    background-color: #f4f3f3
+}
+
+/* Image styles for food menu items */
+.food-menu-container img {
+    display: block;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Container styles for food menu item */
+.food-menu-item {
+    display: flex;
+    flex: 1 1 600px;
+    justify-content: space-evenly;
+    margin-bottom: 3rem;
+}
+
+/* Description styles for food items */
+.food-description {
+    margin: auto 1.5rem;
+}
+
+/* Title styles for food items */
+.font-title {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #444;
+}
+
+/* Paragraph styles for food items */
+.food-description p {
+    font-size: 1.4rem;
+    color: #555;
+    font-weight: 500;
+}
+
+/* Price styles for food items */
+.food-description .food-price {
+    color: #117964;
+    font-weight: 700;
+}
+
+/* Testimonial section styling */
+#testimonials {
+    padding: 5rem 0;
+    background: rgba(243, 243, 243);
+}
+
+/* Title styles for testimonials */
+.testimonial-title {
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 400;
+    color: #555;
+}
+
+/* Container styles for testimonials */
+.testimonial-container {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    padding: 1rem;
+}
+
+/* Checked icon styles for testimonials */
+.testimonial-box .checked {
+    color: #ff9529;
+}
+
+/* Text styles for testimonials */
+.testimonial-box .testimonial-text {
+    margin: 1rem 0;
+    color: #444;
+}
+
+/* Container styles for testimonials */
+.testimonial-box {
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Star rating styles */
+.star-rating {
+    font-size: 30px;
+    /* Adjust the size as needed */
+}
+
+/* Star icon styles */
+.star {
+    color: gold;
+    /* Change the color if needed */
+}
+
+/* Image styles for customer photo */
+.customer-photo img {
+    display: block;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    margin: auto;
+}
+
+/* Contact Us section styling */
+#contact {
+    padding: 5rem 0;
+    background: rgb(226, 226, 226);
+}
+
+/* Container styles for contact section */
+.contact-container {
+    display: flex;
+    background: #fff;
+}
+
+/* Image container styles for contact section */
+.contact-img {
+    width: 50%;
+}
+
+/* Image styles for contact section */
+.contact-img img {
+    display: block;
+    height: 400px;
+    width: 100%;
+    object-position: center;
+    object-fit: cover;
+}
+
+/* Form container styles for contact section */
+.form-container {
+    padding: 1rem;
+    width: 50%;
+    margin: auto;
+}
+
+/* Input styles for contact form */
+.form-container input {
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #ddd;
+    padding: 1rem 0;
+    box-shadow: none;
+    outline: none;
+    margin-bottom: 1rem;
+    color: #444;
+    font-weight: 500;
+}
+
+/* Textarea styles for contact form */
+.form-container textarea {
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #ddd;
+    color: #444;
+    outline: none;
+    padding: 1rem 0;
+    resize: none;
+}
+
+/* Title styles for contact form */
+.form-container h2 {
+    font-size: 2.7rem;
+    font-weight: 500;
+    color: #444;
+    margin-bottom: 1rem;
+    margin-top: -1.2rem;
+}
+
+/* Link styles for contact form */
+.form-container a {
+    font-size: 1.3rem;
+}
+
+/* Footer styles */
+#footer h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    padding: 2.6rem;
+    font-weight: 500;
+    color: #fff;
+    background: rgb(65, 65, 65);
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    .navbar {
+        opacity: 0.95;
+    }
+
+    /* Display checkbox and hamburger lines for smaller screens */
+    .navbar-container input[type="checkbox"],
+    .navbar-container .hamburger-lines {
+        display: block;
+    }
+
+    .navbar-container {
+        display: block;
+        position: relative;
+        height: 64px;
+    }
+
+    /* Styles for checkbox */
+    .navbar-container input[type="checkbox"] {
+        position: absolute;
+        display: block;
+        height: 32px;
+        width: 30px;
+        top: 20px;
+        left: 20px;
+        z-index: 5;
+        opacity: 0;
+    }
+
+    /* Styles for hamburger lines */
+    .navbar-container .hamburger-lines {
+        display: block;
+        height: 23px;
+        width: 35px;
+        position: absolute;
+        top: 17px;
+        left: 20px;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    /* Styles for each line in hamburger menu */
+    .navbar-container .hamburger-lines .line {
+        display: block;
+        height: 4px;
+        width: 100%;
+        border-radius: 10px;
+        background: #333;
+    }
+
+    .navbar-container .hamburger-lines .line1 {
+        transform-origin: 0% 0%;
+        transition: transform 0.4s ease-in-out;
+    }
+
+    .navbar-container .hamburger-lines .line2 {
+        transition: transform 0.2s ease-in-out;
+    }
+
+    /* Styles for hamburger lines in the navbar */
+    .navbar-container .hamburger-lines .line3 {
+        transform-origin: 0% 100%;
+        transition: transform 0.4s ease-in-out;
+    }
+
+    /* Styles for the menu items in the navbar */
+    .navbar .menu-items {
+        padding-top: 100px;
+        background: #fff;
+        height: 100vh;
+        max-width: 300px;
+        transform: translate(-150%);
+        display: flex;
+        flex-direction: column;
+        margin-left: -40px;
+        padding-left: 50px;
+        transition: transform 0.5s ease-in-out;
+        box-shadow: 5px 0px 10px 0px #aaa;
+    }
+
+    /* Styles for individual menu items */
+    .navbar .menu-items li {
+        margin-bottom: 1.5rem;
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+
+    /* Styles for the logo in the navbar */
+    .logo {
+        position: absolute;
+        top: 5px;
+        right: 15px;
+        font-size: 2rem;
+    }
+
+    /* Animation for opening the menu on checkbox check */
+    .navbar-container input[type="checkbox"]:checked~.menu-items {
+        transform: translateX(0);
+    }
+
+    /* Animation for rotating the hamburger lines when checkbox is checked */
+    .navbar-container input[type="checkbox"]:checked~.hamburger-lines .line1 {
+        transform: rotate(35deg);
+    }
+
+    /* Animation for hiding the middle hamburger line when checkbox is checked */
+    .navbar-container input[type="checkbox"]:checked~.hamburger-lines .line2 {
+        transform: scaleY(0);
+    }
+
+    /* Animation for rotating the bottom hamburger line when checkbox is checked */
+    .navbar-container input[type="checkbox"]:checked~.hamburger-lines .line3 {
+        transform: rotate(-35deg);
+    }
+
+    /* Responsive styles for food section */
+    .food-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    /* Margin for individual food types */
+    .food-type:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+
+    /* Box shadow for individual food types */
+    .food-type {
+        box-shadow: 5px 5px 10px 0 #aaa;
+    }
+
+    /* Reset margin for image containers in food section */
+    .img-container {
+        margin: 0;
+    }
+
+    /* Media queries for small screens (max-width: 500px) */
+    @media (max-width: 500px) {
+
+        /* Adjust font size for better readability */
+        html {
+            font-size: 65%;
+        }
+
+        /* Adjust font size for menu items */
+        .navbar .menu-items li {
+            font-size: 1.6rem;
+        }
+
+        /* Adjust layout for testimonials section */
+        .testimonial-container {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        /* Center images in food menu */
+        .food-menu-container img {
+            margin: auto;
+        }
+
+        /* Adjust layout for food menu items */
+        .food-menu-item {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        /* Adjust width for contact form container */
+        .form-container {
+            width: 90%;
+        }
+
+        /* Adjust layout for contact section */
+        .contact-container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Adjust width for contact section image */
+        .contact-img {
+            width: 90%;
+            margin: 3rem auto;
+        }
+
+        /* Adjust font size and position for logo */
+        .logo {
+            position: absolute;
+            top: 06px;
+            right: 15px;
+            font-size: 3rem;
+        }
+
+        /* Adjust margin for menu items in navbar */
+        .navbar .menu-items li {
+            margin-bottom: 2.5rem;
+            font-size: 1.8rem;
+            font-weight: 500;
+        }
+    }
+
+    /* Media queries for medium screens (769px to 1200px) */
+    @media (min-width: 769px) and (max-width: 1200px) {
+
+        /* Adjust font size for image container title */
+        .img-container h3 {
+            font-size: 1.5rem;
+        }
+
+        /* Adjust font size for button in image container */
+        .img-container .btn {
+            font-size: 0.7rem;
+        }
+    }
+
+    /* Media queries for landscape orientation and max height of 500px */
+    @media (orientation: landscape) and (max-height: 500px) {
+
+        /* Adjust height for showcase area */
+        .showcase-area {
+            height: 50vmax;
+        }
+
+        /* Center button vertically and horizontally in landscape mode */
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Adjust style for primary button */
+        .btn-primary {
+            margin-top: 20px;
+        }
+
+        /* Center the button */
+        .center-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+    }
